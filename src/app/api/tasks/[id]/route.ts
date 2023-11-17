@@ -2,8 +2,10 @@ import prisma from "@/lib/prismadb";
 import { NextResponse } from "next/server";
 
 
-
-export const PATCH = async (request: Request, { params }) => {
+type ParamsType = {
+  id: string;
+};
+export const PATCH = async (request: Request, { params }: { params: ParamsType }) => {
   try {
     const body = await request.json();
     const { title, description } = body;
@@ -29,7 +31,7 @@ export const PATCH = async (request: Request, { params }) => {
   }
 };
 
-export const DELETE = async (request: Request, { params}) => {
+export const DELETE = async (request: Request, { params }: { params: ParamsType }) => {
   try {
     const { id } = params;
     await prisma.task.delete({

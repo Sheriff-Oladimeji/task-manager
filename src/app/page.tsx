@@ -1,20 +1,17 @@
+
 import Header from '@/components/Header';
+import Navigation from '@/components/Navigation';
+import Main from '@/components/Main';
 import Sidebar from '@/components/Sidebar';
-import Summary from '@/components/Summary';
-import Tasks from '@/components/Tasks';
-import Scheduler from '@/components/Scheduler';
-import Timer from '@/components/Timer';
 import React from 'react'
 
 const page = () => {
   return (
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-rows-5 gap-10 bg-background">
-      <Sidebar />
+    <div className="grid sm:grid-cols-3 md:grid-cols-5  grid-rows-6 h-screen  bg-[#F4F7FD] dark:bg-background">
+      <Navigation />
       <Header />
-      <Timer />
-      <Summary />
-      <Tasks />
-      <Scheduler/>
+      <Main />
+      <Sidebar/>
     </div>
   );
 }

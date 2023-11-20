@@ -1,9 +1,8 @@
 import React from 'react'
+import { Card } from './ui/card'
 
 const Sidebar = () => {
-  return (
-    <div className='flex flex-col row-span-4'>Sidebar</div>
-  )
+  return <Card className="hidden sm:flex flex-col gap-4 h-screen"></Card>;
 }
 
 export default Sidebar

@@ -1,17 +1,18 @@
 
-import Header from '@/components/Header';
-import Navigation from '@/components/Navigation';
-import Main from '@/components/Main';
 
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import React from 'react'
 
 const page = () => {
   return (
-    <div className="grid sm:grid-cols-3 md:grid-cols-5  grid-rows-6 bg-[#F4F7FD] dark:bg-background h-screen max-h-screen ">
-      <Navigation />
-      <Header />
-      <Main />
-     
+    <div className="flex flex-col gap-6 h-screen items-center justify-center">
+      <h1 className="bg-card text-card-foreground font-bold text-3xl ">
+        Taskio
+      </h1>
+      <Link  href="/dashboard">
+        <Button>GO to Dashboard</Button>
+      </Link>
     </div>
   );
 }

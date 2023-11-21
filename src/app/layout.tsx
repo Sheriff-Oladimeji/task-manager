@@ -7,7 +7,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Taskio",
+  title: "Taskmate",
   description: "AI-Powered Task Manager to boost your productivity",
 };
 

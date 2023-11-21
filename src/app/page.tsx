@@ -8,9 +8,9 @@ const page = () => {
   return (
     <div className="flex flex-col gap-6 h-screen items-center justify-center">
       <h1 className="bg-card text-card-foreground font-bold text-3xl ">
-        Taskio
+        Taskmate
       </h1>
-      <Link  href="/dashboard">
+      <Link href="/dashboard">
         <Button>GO to Dashboard</Button>
       </Link>
     </div>

@@ -48,7 +48,7 @@ const links: NavLink[] = [
 
 const Navigation = () => {
   return (
-    <Card className="hidden sm:flex flex-col gap-6 h-full sm:row-span-6 px-6 justify-between py-10">
+    <Card className="hidden sm:flex flex-col gap-6 h-full row-span-6 px-6 justify-between py-10">
       <div>
         <h1 className="font-bold text-3xl mb-8">
           Task<span className="text-blue-700 dark:text-blue-500">mate</span>

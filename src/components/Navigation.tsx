@@ -76,7 +76,7 @@ const Navigation = () => {
               <Link
                 href={link.link}
                 key={link.id}
-                className="flex gap-2 items-center font-medium text-lg hover:bg-primary light:hover:text-primary-foreground hover:font-bold rounded-md px-4 py-2"
+                className="flex gap-2 items-center font-medium text-lg hover:bg-primary hover:text-white  hover:font-bold rounded-md px-4 py-2"
               >
                 {link.icon}
                 {link.title}

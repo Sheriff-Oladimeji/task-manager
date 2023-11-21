@@ -11,7 +11,7 @@ const page = () => {
         Taskmate
       </h1>
       <Link href="/dashboard">
-        <Button>GO to Dashboard</Button>
+        <Button className='text-white font-bold'>GO to Dashboard</Button>
       </Link>
     </div>
   );

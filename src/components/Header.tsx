@@ -13,7 +13,9 @@ const Header = () => {
       <InputWithButton />
       <div className="flex items-center gap-6">
         <ModeToggle />
-        <IoMdNotificationsOutline size={30} />
+        <button className="">
+          <IoMdNotificationsOutline size={30} />
+        </button>
         <div className="flex items-center gap-4 ">
           <Image
             src="https://images.unsplash.com/photo-1625504615927-c14f4f309b63?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"

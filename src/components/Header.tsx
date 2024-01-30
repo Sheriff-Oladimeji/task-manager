@@ -12,7 +12,7 @@ const Header = () => {
   const {user, isLoaded } = useUser()
   return (
     <Card className="sm:col-span-2 md:col-span-5  p-4 flex flex-row items-center justify-between">
-      <h1 className="font-bold text-xl p-4 cursor-pointer">Hello, Sheriff</h1>
+      <h1 className="font-bold text-xl p-4 cursor-pointer">Hello, {user}</h1>
       <InputWithButton />
       <div className="flex items-center gap-6">
         <ModeToggle />
